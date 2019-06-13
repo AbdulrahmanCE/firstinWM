@@ -1,7 +1,7 @@
 import numpy as np
 
 # Setting the random seed, feel free to change it and see different solutions.
-
+#neam hariri
 np.random.seed(42)
 
 def stepFunction(t):
