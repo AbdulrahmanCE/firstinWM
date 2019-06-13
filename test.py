@@ -5,6 +5,9 @@ import numpy as np
 np.random.seed(42)
 
 
+def print():
+    return true
+
 
 def prediction(X, W, b):
     return stepFunction((np.matmul(X, W) + b)[0])
