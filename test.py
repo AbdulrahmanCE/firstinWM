@@ -4,10 +4,6 @@ import numpy as np
 #neam hariri
 np.random.seed(42)
 
-def stepFunction(t):
-    if t >= 0:
-        return 1
-    return 0
 
 
 def prediction(X, W, b):
