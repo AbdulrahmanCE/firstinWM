@@ -33,7 +33,7 @@ def perceptronStep(X, y, W, b, learn_rate=0.01):
                 b -= learn_rate
         return W, b
 
-    return b, b
+    return g, b
 
 
 # This function runs the perceptron algorithm repeatedly on the dataset,
