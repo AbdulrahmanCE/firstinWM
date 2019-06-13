@@ -1,13 +1,9 @@
 import numpy as np
 
 # Setting the random seed, feel free to change it and see different solutions.
-
+#neam hariri
 np.random.seed(42)
 
-def stepFunction(t):
-    if t >= 0:
-        return 1
-    return 0
 
 
 def prediction(X, W, b):
@@ -51,5 +47,9 @@ def trainPerceptronAlgorithm(X, y, learn_rate=0.01, num_epochs=25):
     for i in range(num_epochs):
         # In each epoch, we apply the perceptron step.
         W, b = perceptronStep(X, y, W, b, learn_rate)
-        boundary_lines.append((-W[0] / W[1], -b / W[1]))
+        boundary_lines.append((-W[0] / W[1], -b / W[0]))
     return boundary_lines
+
+
+def printSum(x, y):
+    print(x + y)
