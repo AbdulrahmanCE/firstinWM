@@ -6,7 +6,7 @@ np.random.seed(42)
 
 
 def print():
-    return true
+    return false
 
 
 def prediction(X, W, b):
