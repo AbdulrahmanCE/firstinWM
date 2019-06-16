@@ -22,7 +22,7 @@ model = tf.keras.models.Sequential([
   tf.keras.layers.Dense(10, activation='softmax')
 ])
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
-model.summary()
+
 model.fit(training_images, training_labels, epochs=5)
 test_loss = model.evaluate(test_images, test_labels)
 
